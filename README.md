@@ -1,12 +1,15 @@
-Projeto Django 
+# Projeto Django XYZ
 
-Pré-requisitos
+## Pré-requisitos
+
 Para instalar e executar este projeto Django, você precisa seguir estas etapas:
 
-Configurar o ambiente virtual (venv):
+### Configurar o ambiente virtual (venv)
+
 bash
-Copiar código
 python -m venv venv
+
+
 Ativar o ambiente virtual:
 
 No Windows:
