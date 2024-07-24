@@ -1,4 +1,4 @@
-# Projeto Django XYZ
+# Projeto Django 
 
 ## Pré-requisitos
 
@@ -35,6 +35,8 @@ python manage.py migrate
 python manage.py runserver
 
 ### Acessando as APIs
+## Em caso de dúvidas há uma pasta no corpo deste projeto chamada ilustrações, aonde podem ser visto exemplo do funcionamento das API's 
+
 Você pode acessar as seguintes APIs:
 
 ## Documentação Swagger/OpenAPI: http://127.0.0.1:8000/api/v2/docs#/
