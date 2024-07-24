@@ -25,11 +25,11 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+### Verificar se possui alterações das migrações do banco de dados:
+python manage.py makemigrations
+
 ### Aplicar as migrações do banco de dados:
-
-
-####python manage.py makemigrations
-####python manage.py migrate
+python manage.py migrate
 
 ### Executar o servidor de desenvolvimento:
 python manage.py runserver
