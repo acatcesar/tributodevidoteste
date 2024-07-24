@@ -12,11 +12,11 @@ python -m venv venv
 
 ### Ativar o ambiente virtual:
 
-##No Windows:
+## No Windows:
 bash
 venv\Scripts\activate
 
-##No macOS/Linux:
+## No macOS/Linux:
 bash
 source venv/bin/activate
 
@@ -37,11 +37,11 @@ python manage.py runserver
 ### Acessando as APIs
 Você pode acessar as seguintes APIs:
 
-##Documentação Swagger/OpenAPI: http://127.0.0.1:8000/api/v2/docs#/
+## Documentação Swagger/OpenAPI: http://127.0.0.1:8000/api/v2/docs#/
 Utilizando a interface web de gerenciamento das APIs
 Acesse a URL acima.
 
-##Insira um usuário cadastrado no campo "authorize".
+## Insira um usuário cadastrado no campo "authorize".
 
 ## Realize as operações de login (POST), listagem de usuários (GET) e cadastro de usuários (POST) conforme a documentação web.
 ### Utilizando o Postman ou outro serviço de requisições
