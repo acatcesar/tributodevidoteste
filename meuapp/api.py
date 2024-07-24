@@ -5,6 +5,10 @@ from django.contrib import auth
 
 router = Router()
 
+class UsuarioCreate(Schema):
+    username: str
+    password: str
+
 class UsuarioLogin(Schema):
     username: str
     senha: str
@@ -32,3 +36,16 @@ def list_users(request):
     usuarios = Usuario.objects.all()
     usernames = [usuario.username for usuario in usuarios]
     return JsonResponse({'usuarios': usernames}, safe=False)
+
+@router.post('usuarios/')
+def create_user(request, usuario: UsuarioCreate):
+    if Usuario.objects.filter(username=usuario.username).exists():
+        return JsonResponse({'error': 'Usuário já existe'}, status=400)
+
+    user = Usuario(
+        username=usuario.username,
+        password=usuario.password
+    )
+    user.save()
+
+    return JsonResponse({'message': 'Usuário criado com sucesso'}, status=201)
