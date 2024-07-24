@@ -6,30 +6,30 @@ Para instalar e executar este projeto Django, você precisa seguir estas etapas:
 
 ### Configurar o ambiente virtual (venv)
 
-bash
+
 python -m venv venv
 
 
 ### Ativar o ambiente virtual:
 
 ## No Windows:
-bash
+
 venv\Scripts\activate
 
 ## No macOS/Linux:
-bash
+
 source venv/bin/activate
 
 ### Instalar as dependências:
 
-bash
+
 pip install -r requirements.txt
 
 ### Aplicar as migrações do banco de dados:
 
-bash
-python manage.py makemigrations
-python manage.py migrate
+
+####python manage.py makemigrations
+####python manage.py migrate
 
 ### Executar o servidor de desenvolvimento:
 python manage.py runserver
